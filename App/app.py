@@ -4,7 +4,7 @@ import tkinter.font as tkFont
 
 from cart import Cart
 
-
+# Main handler for our entire application
 class App:
     root: Tk = None
     custom_font = None
