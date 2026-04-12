@@ -1,1 +1,0 @@
-Business invoices are generated here.

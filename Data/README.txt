@@ -1,1 +1,0 @@
-Application data goes here. I would not recommend manually modifying these files.

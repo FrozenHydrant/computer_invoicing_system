@@ -1,1 +1,0 @@
-Customer invoices are generated here.
