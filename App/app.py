@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter.ttk import *
 import tkinter.font as tkFont
 
-from cart import Cart
+from shopping_cart import Cart
 
 # Main handler for our entire application
 class App:
