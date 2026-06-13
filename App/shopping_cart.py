@@ -80,7 +80,6 @@ class Cart:
 
     def _add_item(self):
         self.iteminfo_window_handle.create()
-        print(self.items, self.cart_items_display)
 
 
     def update_display(self):
@@ -105,7 +104,13 @@ class Cart:
     
     def _select_items(self, event):
         #print(self.cart_listbox.curselection())
-        item_index = self.cart_listbox.curselection()[0]
+        item_selection = self.cart_listbox.curselection()
+        item_index: int = -1
+        if len(item_selection) > 0:
+            item_index = item_selection[0]
+        else:
+            return
+        
         item_name = self.cart_items_display.get()[item_index]
         
         index, my_item = self.locate_item(item_name)
